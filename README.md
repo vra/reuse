@@ -3,6 +3,11 @@ Collection of useful python functions (reuse again and again).
 
 [![Build Status](https://travis-ci.com/vra/reuse.svg?branch=master)](https://travis-ci.com/vra/reuse)
 
+# supported platform
+ * Linux
+ * python2.7 and higher
+ * python3.5 and higer
+ 
 # installation
 ```bash
 pip3 install --user py-reuse
