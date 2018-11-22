@@ -1,7 +1,7 @@
 # reuse
 Collection of useful python functions (reuse again and again).
 
-[![Build Status](https://travis-ci.com/vra/reuse)](https://travis-ci.com/vra/reuse.svg?branch=master)
+[![Build Status](https://travis-ci.com/vra/reuse.svg?branch=master)](https://travis-ci.com/vra/reuse)
 
 # installation
 ```bash
