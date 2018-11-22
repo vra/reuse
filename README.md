@@ -6,7 +6,7 @@ Collection of useful python functions (reuse again and again).
 # supported platform
  * Linux
  * python2.7 and higher
- * python3.5 and higer
+ * python3.5 and higher
  
 # installation
 ```bash
