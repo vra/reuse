@@ -17,5 +17,5 @@ rs.create_dir_if_not_exist('/path/to/new/dir') # Create a directory only when it
 ...
 
 ```
-doc is on the way.
+docs: <https://py-reuse.readthedocs.io>.
 
