@@ -3,6 +3,9 @@ Collection of useful python functions (reuse again and again).
 
 [![Build Status](https://travis-ci.com/vra/reuse.svg?branch=master)](https://travis-ci.com/vra/reuse)
 
+Demo:
+[![asciicast](https://asciinema.org/a/m0fEneiY03JwiEzc20ERG99Vl.png)](https://asciinema.org/a/m0fEneiY03JwiEzc20ERG99Vl)
+
 # supported platform
  * Linux
  * python2.7 and higher
