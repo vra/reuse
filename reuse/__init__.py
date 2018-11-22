@@ -59,6 +59,10 @@ def concat_path(parts):
         >>> parts = ['home', 'myname', 'project']
         >>> path = concat_path(parts)
         >>> print(path)
+        home/myname/project
+        >>> parts = ['/home', 'myname', 'project']
+        >>> path = concat_path(parts)
+        >>> print(path)
         /home/myname/project
 
     """
@@ -226,6 +230,13 @@ def flat_list(ll):
         [1, 2, 3, 4]
 
     """
+    run_assert(isinstance(ll, list), 'll must be a list')
+    if len(ll) == 0:
+        return ll
+
+    if not isinstance(ll[0], list):
+        return ll
+
     return [e for l in ll for e in l]
 
 
@@ -244,7 +255,7 @@ def parent_dir(path):
         '/path/to/my'
 
     """
-    run_assert(os.path.exists(path), 'path doesn\'t exist')
+    run_assert(isinstance(path, str), 'path must be a str')
 
     return os.path.dirname(path)
 
@@ -267,7 +278,7 @@ def full_name(path):
         'mydir'
 
     """
-    run_assert(os.path.exists(path), 'path doesn\'t exist')
+    run_assert(isinstance(path, str), 'path must be a str')
 
     return os.path.basename(path)
 
@@ -287,6 +298,6 @@ def pure_name(path):
         a
 
     """
-    run_assert(os.path.exists(path), 'path doesn\'t exist')
+    run_assert(isinstance(path, str), 'path must be a str')
 
     return os.path.basename(os.path.splitext(path)[0])
