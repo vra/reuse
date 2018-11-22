@@ -1,6 +1,6 @@
 # reuse
 Collection of useful python functions (reuse again and again).
-
+[![Build Status](https://travis-ci.com/vra/reuse.svg?branch=master)]
 # installation
 ```bash
 pip3 install --user py-reuse
