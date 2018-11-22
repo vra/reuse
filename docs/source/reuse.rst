@@ -11,3 +11,6 @@ reuse
 .. autofunction:: read_from_file
 .. autofunction:: write_to_file
 .. autofunction:: flat_list
+.. autofunction:: parent_dir
+.. autofunction:: full_name
+.. autofunction:: pure_name
