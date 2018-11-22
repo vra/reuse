@@ -199,7 +199,7 @@ def write_to_file(content, file_name):
         file_name (str): name of file to wirte.
 
     Example:
-        >>> content = 'line1\nline2\nline3'
+        >>> content = 'line1\tline2\tline3'
         >>> write_to_file(content, 'a.txt')
 
     """
@@ -227,3 +227,66 @@ def flat_list(ll):
 
     """
     return [e for l in ll for e in l]
+
+
+def parent_dir(path):
+    """ Return the parent directory of a path.
+
+    Args:
+        path (str): a str contain a POSIX path.
+
+    Returns:
+        str: the parent directory of target path.
+
+    Example:
+        >>> path = '/path/to/my/a.txt'
+        >>> parent_dir(path)
+        '/path/to/my'
+
+    """
+    run_assert(os.path.exists(path), 'path doesn\'t exist')
+
+    return os.path.dirname(path)
+
+
+def full_name(path):
+    """ Get the full name (name + '.' + extension) of a path.
+
+    Args:
+        path (str): a str contain a POSIX path.
+
+    Returns:
+        str: name of the file or dir in path.
+
+    Example:
+        >>> path = '/path/to/a.txt'
+        >>> fill_name(path)
+        'a.txt'
+        >>> path = '/path/to/mydir'
+        >>> fill_name(path)
+        'mydir'
+
+    """
+    run_assert(os.path.exists(path), 'path doesn\'t exist')
+
+    return os.path.basename(path)
+
+
+def pure_name(path):
+    """ Get the name with extension of a path.
+
+    Args:
+        path (str): a str contain a POSIX path.
+
+    Returns:
+        str: name of the file or dir in path.
+
+    Example:
+        >>> path = '/path/to/a.txt'
+        >>> pure_name(path)
+        a
+
+    """
+    run_assert(os.path.exists(path), 'path doesn\'t exist')
+
+    return os.path.basename(os.path.splitext(path)[0])
