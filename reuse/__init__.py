@@ -2,7 +2,7 @@
 Collections of useful python functions.
 """
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 __author__ = 'Yunfeng Wang'
 
 import glob

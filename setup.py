@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="py-reuse",
-    version="0.0.2",
+    version="0.0.3",
     description="Collection of useful python functions",
     url="https://github.com/vra/reuse",
     author="Yunfeng Wang",
